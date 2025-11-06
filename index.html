@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Squares Shooter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Pantalla de inicio -->
+    <div id="start-screen">
+      <h1>Squares Shooter</h1>
+      <input type="text" id="username" placeholder="Ingresa tu nombre" />
+      <button id="start-button">Aceptar</button>
+    </div>
+
+    <!-- Pantalla de juego -->
+    <div id="game" style="display: none">
+      <div id="score">Puntos: 0</div>
+      <div id="level">Nivel: 1</div>
+      <div id="player-name">Jugador:</div>
+      <div id="player"></div>
+    </div>
+
+    <!-- Pantalla de créditos / fin del juego -->
+    <div id="credits-screen" style="display: none">
+      <h2>¡Gracias por jugar!</h2>
+      <p>Jugador: <span id="final-name"></span></p>
+      <p>Puntaje final: <span id="final-score"></span></p>
+      <button id="restart-button">Volver a jugar</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

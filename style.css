@@ -1,0 +1,146 @@
+/* Estilo base */
+body {
+  margin: 0;
+  background: #111;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Pantalla de inicio */
+#start-screen {
+  text-align: center;
+  color: white;
+}
+
+#start-screen input,
+#start-screen button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Pantalla de juego */
+#game {
+  position: relative;
+  width: 400px;
+  height: 600px;
+  background: #222;
+  overflow: hidden;
+  border: 2px solid #fff;
+}
+
+/* Jugador */
+#player {
+  position: absolute;
+  bottom: 20px;
+  left: 180px;
+  width: 40px;
+  height: 40px;
+  background: #0f0;
+  border-radius: 50%;
+  transition: left 0.05s linear;
+}
+
+/* Enemigos */
+.enemy {
+  position: absolute;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  background: red;
+}
+
+/* Balas */
+.bullet {
+  position: absolute;
+  width: 4px;
+  height: 20px;
+  background: #0ff;
+  transition: bottom 0.05s linear;
+}
+
+/* HUD */
+#score,
+#player-name,
+#level {
+  position: absolute;
+  top: 10px;
+  color: white;
+  font-size: 18px;
+}
+
+#score {
+  left: 10px;
+}
+
+#level {
+  left: 120px;
+}
+
+#player-name {
+  right: 10px;
+}
+
+/* Pantalla de créditos */
+#credits-screen {
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #111;
+  padding: 20px;
+  border: 2px solid #fff;
+  width: 300px;
+}
+
+#credits-screen button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Efecto de explosión */
+.explosion {
+  animation: explode 0.3s ease-out;
+}
+
+@keyframes explode {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  #game {
+    width: 90vw;
+    height: 80vh;
+  }
+
+  #player {
+    width: 10vw;
+    height: 10vw;
+  }
+
+  .enemy {
+    width: 10vw;
+    height: 10vw;
+  }
+
+  .bullet {
+    width: 1vw;
+    height: 5vh;
+  }
+}
