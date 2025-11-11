@@ -40,11 +40,9 @@ squares-shooter/
 - ❤️ Sistema de vidas o escudos
 - 🔫 Power-ups (disparo doble, velocidad, etc.)
 - 👾 Enemigos con patrones de movimiento
-- 🌐 Tabla de récords globales con Firebase o Supabase
 
-📜 Licencia
-Este proyecto es de código abierto y puedes usarlo, modificarlo y compartirlo libremente para fines educativos o personales.
-
-¿Quieres que lo traduzca al inglés o que lo prepare con formato Markdown para GitHub? También puedo ayudarte a crear un logo o capturas de pantalla para acompañarlo.
 ¡Diviértete jugando y programando! 🚀
+
 # shotSquarers
+
+![alt text](image.png)
